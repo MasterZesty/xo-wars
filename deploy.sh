@@ -7,6 +7,6 @@ set -e
 ng build --base-href "https://masterzesty.github.io/xo-wars/"
 
 # 2. Deploy to GitHub Pages using angular-cli-ghpages
-npx angular-cli-ghpages --dir=dist
+npx angular-cli-ghpages --dir=dist/xo-wars
 
 echo "🚀 Deployment complete! Visit: https://masterzesty.github.io/xo-wars/"
