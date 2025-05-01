@@ -1,0 +1,85 @@
+.app-grid-container {
+  // border: 1px solid rgb(0, 255, 13);
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+
+  .game-over-message, .game-current-message{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .play-again-button {
+    // width: 100px;
+    // height: 100px;
+    // aspect-ratio: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+    button {
+      width: 95%;
+      height: 95%;
+      padding: 0;
+      min-width: 0;
+      min-height: 0;
+      font-size: 1.5rem;
+
+      mat-icon {
+        font-size: 3.5rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .grid {
+    // border: 1px solid red;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+
+    .grid-row {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+
+      .grid-row-element {
+        // border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          min-width: 0;
+          min-height: 0;
+
+          mat-icon {
+            font-size: 6rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

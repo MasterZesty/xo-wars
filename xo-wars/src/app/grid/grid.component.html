@@ -1,0 +1,30 @@
+<div class="app-grid-container">
+  <div class="grid">
+    <div class="grid-row" *ngFor="let row of boardState; let i = index">
+      <div class="grid-row-element" *ngFor="let col of row; let j = index">
+        <button (click)="registerMove(i,j)" mat-fab extended>
+          <mat-icon>
+            {{ boardState[i][j] === 'X' ? 'close' : boardState[i][j] === 'O' ? 'radio_button_unchecked' : '' }}
+          </mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-over-message" *ngIf="gameOver">
+    {{gameOverMessage}}
+  </div>
+
+  <div class="game-current-message" *ngIf="!gameOver">
+    {{gameCurrentMessage}}
+  </div>
+
+  <div class="play-again-button">
+    <button mat-raised-button color="primary" (click)="resetState()" *ngIf="gameOver">
+      Play Again
+      <mat-icon>replay</mat-icon>
+    </button>
+  </div>
+</div>
+
+
